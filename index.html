@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jenga AR/VR Game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="main-menu">
+    <div id="exit-button-container">
+      <button id="exit-button">Exit</button>
+    </div>
+    <div id="title-container">
+        <img id="title-image" src="images/title.png" alt="Jenga Title">
+    </div>
+    <div id="button-container">
+        <button id="start-game" class="hidden">Start Game</button>
+        <button id="settings" class="hidden">Settings</button>
+        <button id="tutorial" class="hidden">Tutorial</button>
+        <button id="multiplayer" class="hidden">Multiplayer</button>
+    </div>
+</div>
+   <!-- Audio element for sound effect -->
+  <audio id="sound-effect" src="sounds/title-sound.mp3"></audio>
+
+
+    <div id="game-container" style="display:none;"></div>
+    <div id="exit-container" style="display: none;">
+        <h1>The application has ended.</h1>
+    </div>
+
+
+    <script type="module" src="app.js"></script>
+</body>
+</html>
